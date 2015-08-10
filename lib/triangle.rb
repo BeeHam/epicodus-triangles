@@ -29,6 +29,16 @@ class Triangle
      false
    else
      true
-   end 
+   end
+ end
+
+ define_method(:which_triangle?) do
+   if self.equilateral?()
+     "equilateral"
+   elsif self.isosceles?()
+     "isosceles"
+   else
+     "scalene"
+   end
  end
 end

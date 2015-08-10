@@ -22,4 +22,13 @@ describe (Triangle) do
       expect(test_triangle3.scalene?()).to(eq(true))
     end
   end
+
+  describe('#which_triangle') do
+    it("returns triangle that satisfies given input") do
+      test_triangle4 = Triangle.new(15, 15, 15)
+      expect(test_triangle4.which_triangle?()).to(eq("equilateral"))
+    end
+  end
+
+
 end
