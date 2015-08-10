@@ -34,11 +34,11 @@ class Triangle
 
  define_method(:which_triangle?) do
    if self.equilateral?()
-     "equilateral"
+     "Equilateral"
    elsif self.isosceles?()
-     "isosceles"
+     "Isosceles"
    else
-     "scalene"
+     "Scalene"
    end
  end
 end
