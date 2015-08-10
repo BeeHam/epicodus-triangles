@@ -17,8 +17,8 @@ describe (Triangle) do
   end
 
   describe('#scalene') do
-    it("returns true if any two sides are equal") do
-      test_triangle3 = Triangle.new(15, 15, 30)
+    it("returns true if any no sides are equal") do
+      test_triangle3 = Triangle.new(15, 16, 30)
       expect(test_triangle3.scalene?()).to(eq(true))
     end
   end

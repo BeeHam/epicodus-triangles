@@ -21,4 +21,14 @@ class Triangle
      false
    end
  end
+
+ define_method(:scalene?) do
+   if @side1.eql?(@side2).|(@side1.eql?(@side3))
+     false
+   elsif @side2.eql?(@side3)
+     false
+   else
+     true
+   end 
+ end
 end
